@@ -12,6 +12,10 @@ class Vehicle {
   turnRight() {
     print('The car turn right');
   }
+
+  void startEngine() {
+    print('The engine is started');
+  }
 }
 
 class Motorcycle extends Vehicle {
@@ -20,6 +24,7 @@ class Motorcycle extends Vehicle {
 
   @override
   turnRight() {
+    super.startEngine();
     print('The motorcycle turn right');
   }
 }
